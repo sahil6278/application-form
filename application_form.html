@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(243, 243, 136);
+        }
+        form{
+            border: 3px solid black;
+            margin-left:400px ;
+            margin-right: 400px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            background-color: rgb(187, 240, 240);
+        }
+        fieldset{
+            width: 300px;
+            text-align: center;
+            justify-content: center;
+            margin: 0% auto;
+            border-radius: 20px;
+        }
+        input:hover{
+            background-color: rgb(212, 211, 211);
+        }
+        textarea:hover{
+            background-color: rgb(212, 211, 211);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Job Application</h2>
+
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name :">
+        <br>
+        <br>
+        <label for="email">Email Id :</label>
+        <input type="email" name="email" id="email" placeholder="Enter valid email :">
+        <br><br>
+        <label for="phone">Contact no :</label>
+        <input type="tel" name="phone" id="phone" maxlength="10" placeholder="valid contact no">
+        <br><br>
+        <label for="education">Education :</label>
+        <select name="education" id="education">
+            <option value="High School">Select </option>
+            <option value="be">Diploma</option>
+            <option value="bsc">BE</option>
+            <option value="bcs">Btech</option>
+            <option value="bpharma">ME</option>
+            <option value="iti">Mtech</option>
+            <option value="bcom">MBA</option>
+            
+        </select>
+        <br>
+        
+        <br>
+        <label for="experience">Experience (year) :</label>
+        <input type="number" name="experience" id="experience" min="1" max="10">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+                <input type="checkbox" name="languages" id="languages">
+                <label for="languages">HTML</label>
+                <br>
+                <input type="checkbox" name="languages" id="languages">
+                <label for="languages">CSS</label>
+                <br>
+                <input type="checkbox" name="languages" id="languages">
+                <label for="languages">JS</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Availability</legend>
+                <input type="radio" name="job time" id="job time">
+                <label for="job time">Full Time :</label><br>
+                <input type="radio" name="job time" id="job time">
+                <label for="job time">Part Time :</label><br>
+        </fieldset>
+        <br>
+        <label for="document">Resume :</label>
+        <input type="file" name="document" id="document">
+        <br><br>
+        <label for="comment">Additional Comments :</label><br>
+        <textarea name="comment" id="comment" cols="30" rows="4"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
